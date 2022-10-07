@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Prev_Arrow" data-name="Prev Arrow" transform="translate(-180 -421)">
+    <g id="Group_893" data-name="Group 893">
+      <g id="left" transform="translate(190 431)">
+        <g id="Layer_2" data-name="Layer 2" transform="translate(4.117 8.244)">
+          <path id="Path_1575" data-name="Path 1575" d="M16.752,33.5a1.375,1.375,0,0,1-.976-.4L3.4,20.728a1.375,1.375,0,0,1,0-1.953L15.776,6.4a1.381,1.381,0,1,1,1.952,1.952L6.316,19.752l11.412,11.4a1.375,1.375,0,0,1-.976,2.351Z" transform="translate(-2.994 -5.996)" fill="#fff"/>
+          <path id="Path_1576" data-name="Path 1576" d="M37.375,17.75h-33a1.375,1.375,0,0,1,0-2.75h33a1.375,1.375,0,0,1,0,2.75Z" transform="translate(-2.992 -2.619)" fill="#fff"/>
+        </g>
+        <g id="frame">
+          <rect id="Rectangle_1693" data-name="Rectangle 1693" width="44" height="44" fill="none"/>
+        </g>
+      </g>
+      <g id="Rectangle_1760" data-name="Rectangle 1760" transform="translate(180 421)" fill="none" stroke="#fff" stroke-width="2" opacity="0.3">
+        <rect width="64" height="64" stroke="none"/>
+        <rect x="1" y="1" width="62" height="62" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

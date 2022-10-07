@@ -1,0 +1,20 @@
+.banner-section {
+  max-height: 800px;
+  position: relative;
+}
+.banner-section .banner-image {
+  max-height: 800px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-section .banner-content {
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  width: 100%;
+}
+.banner-section .banner-content h1 {
+  color: pink;
+}
+/*# sourceMappingURL=banner.css.map */

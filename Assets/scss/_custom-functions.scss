@@ -1,0 +1,26 @@
+// function for resize
+@function resize($minFtsize, $maxFtsize, $minWidth, $maxWidth) {
+    @return calc(
+        #{$minFtsize}px + (#{$maxFtsize} - #{$minFtsize}) * ((100vw - #{$minWidth}px) / (#{$maxWidth} - #{$minWidth}))
+    );
+}
+
+// mixin for line clamp
+@mixin lineClamp($lines) {
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    display           : -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
+
+// class for same height
+.stretch-card {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    > .card {
+        width: 100%;
+        min-width: 100%;
+    }
+}

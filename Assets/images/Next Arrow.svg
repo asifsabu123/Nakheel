@@ -1,0 +1,17 @@
+<svg id="Next_Arrow" data-name="Next Arrow" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_893" data-name="Group 893">
+    <g id="left" transform="translate(10 10)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(4.125 8.244)">
+        <path id="Path_1575" data-name="Path 1575" d="M4.377,33.5a1.375,1.375,0,0,0,.976-.4L17.728,20.728a1.375,1.375,0,0,0,0-1.953L5.353,6.4A1.381,1.381,0,0,0,3.4,8.353l11.413,11.4L3.4,31.15A1.375,1.375,0,0,0,4.377,33.5Z" transform="translate(17.623 -5.996)" fill="#fff"/>
+        <path id="Path_1576" data-name="Path 1576" d="M4.375,17.75h33a1.375,1.375,0,0,0,0-2.75h-33a1.375,1.375,0,0,0,0,2.75Z" transform="translate(-3 -2.619)" fill="#fff"/>
+      </g>
+      <g id="frame">
+        <rect id="Rectangle_1693" data-name="Rectangle 1693" width="44" height="44" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_1760" data-name="Rectangle 1760" fill="none" stroke="#fff" stroke-width="2" opacity="0.3">
+      <rect width="64" height="64" stroke="none"/>
+      <rect x="1" y="1" width="62" height="62" fill="none"/>
+    </g>
+  </g>
+</svg>

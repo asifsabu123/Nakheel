@@ -1,0 +1,220 @@
+// banner style starts here
+.banner-section {
+    max-height: resize(600, 800, 1400, 1920);
+    position  : relative;
+
+
+    .img-outer {
+        position: relative;
+
+        &::before {
+            content   : "";
+            position  : absolute;
+            left      : 0;
+            top       : 0;
+            width     : 100%;
+            height    : 100%;
+            background: $primary;
+            opacity   : .3;
+            z-index   : 0;
+        }
+
+        .banner-image,
+        .banner-video {
+            max-height: resize(600, 800, 1400, 1920);
+            width     : 100%;
+            object-fit: cover;
+
+        }
+    }
+
+
+    .banner-content {
+        position  : absolute;
+        left      : 0;
+        bottom    : 0;
+        padding   : 60px 0;
+        width     : 100%;
+        background: transparent linear-gradient(180deg, #0C253800 0%, #00263AB2 100%) 0% 0% no-repeat padding-box;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .cta-outer {
+            .btn {
+                min-width: 240px;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &:not(:first-child) {
+                    border    : 2px solid white !important;
+                    background: transparent !important;
+                    color     : white;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.3) !important;
+                        color     : $primary;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .swiper-container {
+        overflow: hidden;
+        width   : 100%;
+        height  : 100%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        height    : resize(56, 64, 1400, 1920);
+        width     : resize(56, 64, 1400, 1920);
+        top       : calc(50% - 32px);
+        transition: all .5s ease;
+        background-size: cover;
+        background-position: center;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            background-color: rgb(255 255 255 / 20%);
+        }
+    }
+
+    .swiper-button-prev {
+        background-image: url('../images/Prev\ Arrow.svg');
+        left            : 40px;
+
+    }
+
+    .swiper-button-next {
+        background-image: url('../images/Next\ Arrow.svg');
+        right           : 40px;
+    }
+
+    .swiper-pagination {
+        bottom : 0 !important;
+        padding: 0 40px 60px 0;
+        width  : auto !important;
+        left   : auto !important;
+        right  : 0 !important;
+
+        .swiper-pagination-bullet {
+            height          : 8px;
+            width           : 8px;
+            background-color: white;
+            opacity         : .3;
+            transition      : all .8s ease;
+
+            &.swiper-pagination-bullet-active {
+                opacity      : 1;
+                width        : 40px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .swiper-progress-bar {
+        position: relative;
+        width   : 100%;
+        display : block;
+        z-index : 1;
+        height  : 3px;
+
+        .slide_progress-bar {
+            position  : absolute;
+            height    : 3px;
+            background: rgba(255, 255, 255, 0.3);
+            width     : auto;
+            clear     : both;
+            opacity   : 0;
+            bottom    : 3px;
+            left      : 0;
+            right     : 0;
+
+            &:after {
+                position  : absolute;
+                top       : 0;
+                left      : 0;
+                background: rgba(255, 255, 255, 0.6);
+                height    : 100%;
+                width     : 0;
+                content   : "";
+                transition: 0.1s width linear;
+            }
+        }
+
+        &.active {
+            .slide_progress-bar {
+                opacity: 1;
+            }
+        }
+
+        &.animate {
+            .slide_progress-bar {
+                &:after {
+                    transition         : width linear;
+                    transition-delay   : unset;
+                    width              : 100%;
+                    transition-duration: 5s;
+                }
+            }
+        }
+    }
+
+    @media(max-width:1400px) {
+        max-height: resize(500, 600, 1200, 1400);
+
+        .banner-image,
+        .banner-video {
+            max-height: resize(500, 600, 1200, 1400);
+        }
+
+        // .banner-content {
+        //     .cta-outer {
+        //         .btn {
+        //             min-width: 240px;
+        //         }
+        //     }
+        // }
+    }
+
+    @media(max-width:1200px) {
+        max-height: resize(400, 500, 992, 1200);
+
+        .banner-image,
+        .banner-video {
+            max-height: resize(400, 500, 992, 1200);
+        }
+
+        .banner-content {
+            .cta-outer {
+                .btn {
+                    min-width: auto;
+                }
+            }
+        }
+    }
+
+    @media(max-width:992px) {
+        max-height: 300px;
+
+        .banner-image,
+        .banner-video {
+            max-height: 300px;
+        }
+
+        // .banner-content {
+        //     bottom: 20%;
+        // }
+    }
+}
+
+// banner style ends here

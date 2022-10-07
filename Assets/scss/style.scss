@@ -1,0 +1,174 @@
+@import "base";
+
+body {
+    font-family: $regular-text;
+}
+
+.bold-headline {
+    font-family: $bold-headline;
+}
+
+.bold {
+    font-family: $bold-text;
+}
+
+.regular-headline {
+    font-family: $regular-headline;
+}
+
+.regular {
+    font-family: $regular-text;
+}
+
+h1 {
+    font-size  : resize(54, 60, 1400, 1920);
+    line-height: resize(58, 64, 1400, 1920);
+
+    @media (max-width:1400px) {
+        font-size  : resize(48, 54, 1200, 1400);
+        line-height: resize(54, 58, 1200, 1400);
+    }
+
+    @media (max-width:1200px) {
+        font-size  : resize(40, 48, 992, 1200);
+        line-height: resize(44, 54, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 40px;
+        line-height: 44px;
+    }
+}
+
+h2 {
+    font-size  : 48px;
+    line-height: 54px;
+
+    @media (max-width:1400px) {
+        font-size  : resize(40, 48, 1200, 1400);
+        line-height: resize(44, 54, 1200, 1400);
+    }
+
+    @media (max-width:1200px) {
+        font-size  : resize(36, 40, 992, 1200);
+        line-height: resize(40, 44, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 36px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font-size  : resize(36, 40, 1400, 1920);
+    line-height: resize(40, 44, 1400, 1920);
+
+    @media (max-width:1400px) {
+        font-size  : 36px;
+        line-height: 40px;
+    }
+
+    @media (max-width:1200px) {
+        font-size  : resize(32, 36, 992, 1200);
+        line-height: resize(36, 40, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 32px;
+        line-height: 36px;
+    }
+}
+
+h4 {
+    font-size  : 32px;
+    line-height: 36px;
+
+    @media (max-width:1200px) {
+        font-size  : resize(28, 32, 992, 1200);
+        line-height: resize(32, 36, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 28px;
+        line-height: 32px;
+    }
+}
+
+h5 {
+    font-size  : 28px;
+    line-height: 32px;
+
+    @media (max-width:1200px) {
+        font-size  : resize(24, 28, 992, 1200);
+        line-height: resize(28, 32, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 24px;
+        line-height: 28px;
+    }
+}
+
+h6 {
+    font-size  : 24px;
+    line-height: 28px;
+
+    @media (max-width:1200px) {
+        font-size  : resize(18, 20, 992, 1200);
+        line-height: resize(22, 24, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 18px;
+        line-height: 22px;
+    }
+}
+
+
+p {
+    font-size  : 18px;
+    line-height: 22px;
+
+    @media (max-width:1200px) {
+        font-size  : resize(14, 18, 992, 1200);
+        line-height: resize(18, 22, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 14px;
+        line-height: 18px;
+    }
+}
+
+p {
+    font-size  : 14px;
+    line-height: 18px;
+
+    @media (max-width:1200px) {
+        font-size  : resize(12, 14, 992, 1200);
+        line-height: resize(14, 18, 992, 1200);
+    }
+
+    @media (max-width:992px) {
+        font-size  : 12px;
+        line-height: 14px;
+    }
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom  : 50px;
+    right   : 50px;
+    display : none;
+
+    &.show {
+        display: block;
+    }
+
+    img {
+        max-height: 50px;
+        max-width : 50px;
+    }
+}
+
