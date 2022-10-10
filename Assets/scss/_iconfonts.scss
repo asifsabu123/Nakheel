@@ -1,0 +1,327 @@
+$icomoon-font-family: "IconFonts" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icarrowdown: "\e900";
+$icarrowleft: "\e901";
+$icarrowright: "\e902";
+$icarrowup: "\e903";
+$icburgermenu: "\e904";
+$iccalendar: "\e905";
+$iccard: "\e906";
+$iccart: "\e907";
+$icchat: "\e908";
+$iccircleclose: "\e909";
+$iccircleminus: "\e90a";
+$iccircleplus: "\e90b";
+$iccircletick: "\e90c";
+$iccirclewarning: "\e90d";
+$icclock: "\e90e";
+$icclose: "\e90f";
+$iccurrency: "\e910";
+$icdelete: "\e911";
+$icdocument: "\e912";
+$icdotmenu: "\e913";
+$icdown: "\e914";
+$icedit: "\e915";
+$icerror: "\e916";
+$iceye: "\e917";
+$iceyeoff: "\e918";
+$icfilter: "\e919";
+$ichome: "\e91a";
+$icimage: "\e91b";
+$icinfo: "\e91c";
+$icleft: "\e91d";
+$iclogo: "\e91e";
+$icmap: "\e91f";
+$icnotification: "\e920";
+$icoffer: "\e921";
+$icphone: "\e922";
+$icphoto: "\e923";
+$icpin: "\e924";
+$icprofile: "\e925";
+$icreload: "\e926";
+$icright: "\e927";
+$icsearch: "\e928";
+$icsettings: "\e929";
+$icshare: "\e92a";
+$icshop: "\e92b";
+$icsort: "\e92c";
+$icticket: "\e92d";
+$icup: "\e92e";
+$icuser: "\e92f";
+$icwallet: "\e930";
+
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?a4o3a2') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?a4o3a2') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?a4o3a2##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ic"], [class*=" ic"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icarrowdown {
+  &:before {
+    content: $icarrowdown; 
+  }
+}
+.icarrowleft {
+  &:before {
+    content: $icarrowleft; 
+  }
+}
+.icarrowright {
+  &:before {
+    content: $icarrowright; 
+  }
+}
+.icarrowup {
+  &:before {
+    content: $icarrowup; 
+  }
+}
+.icburgermenu {
+  &:before {
+    content: $icburgermenu; 
+  }
+}
+.iccalendar {
+  &:before {
+    content: $iccalendar; 
+  }
+}
+.iccard {
+  &:before {
+    content: $iccard; 
+  }
+}
+.iccart {
+  &:before {
+    content: $iccart; 
+  }
+}
+.icchat {
+  &:before {
+    content: $icchat; 
+  }
+}
+.iccircleclose {
+  &:before {
+    content: $iccircleclose; 
+  }
+}
+.iccircleminus {
+  &:before {
+    content: $iccircleminus; 
+  }
+}
+.iccircleplus {
+  &:before {
+    content: $iccircleplus; 
+  }
+}
+.iccircletick {
+  &:before {
+    content: $iccircletick; 
+  }
+}
+.iccirclewarning {
+  &:before {
+    content: $iccirclewarning; 
+  }
+}
+.icclock {
+  &:before {
+    content: $icclock; 
+  }
+}
+.icclose {
+  &:before {
+    content: $icclose; 
+  }
+}
+.iccurrency {
+  &:before {
+    content: $iccurrency; 
+  }
+}
+.icdelete {
+  &:before {
+    content: $icdelete; 
+  }
+}
+.icdocument {
+  &:before {
+    content: $icdocument; 
+  }
+}
+.icdotmenu {
+  &:before {
+    content: $icdotmenu; 
+  }
+}
+.icdown {
+  &:before {
+    content: $icdown; 
+  }
+}
+.icedit {
+  &:before {
+    content: $icedit; 
+  }
+}
+.icerror {
+  &:before {
+    content: $icerror; 
+  }
+}
+.iceye {
+  &:before {
+    content: $iceye; 
+  }
+}
+.iceyeoff {
+  &:before {
+    content: $iceyeoff; 
+  }
+}
+.icfilter {
+  &:before {
+    content: $icfilter; 
+  }
+}
+.ichome {
+  &:before {
+    content: $ichome; 
+  }
+}
+.icimage {
+  &:before {
+    content: $icimage; 
+  }
+}
+.icinfo {
+  &:before {
+    content: $icinfo; 
+  }
+}
+.icleft {
+  &:before {
+    content: $icleft; 
+  }
+}
+.iclogo {
+  &:before {
+    content: $iclogo; 
+  }
+}
+.icmap {
+  &:before {
+    content: $icmap; 
+  }
+}
+.icnotification {
+  &:before {
+    content: $icnotification; 
+  }
+}
+.icoffer {
+  &:before {
+    content: $icoffer; 
+  }
+}
+.icphone {
+  &:before {
+    content: $icphone; 
+  }
+}
+.icphoto {
+  &:before {
+    content: $icphoto; 
+  }
+}
+.icpin {
+  &:before {
+    content: $icpin; 
+  }
+}
+.icprofile {
+  &:before {
+    content: $icprofile; 
+  }
+}
+.icreload {
+  &:before {
+    content: $icreload; 
+  }
+}
+.icright {
+  &:before {
+    content: $icright; 
+  }
+}
+.icsearch {
+  &:before {
+    content: $icsearch; 
+  }
+}
+.icsettings {
+  &:before {
+    content: $icsettings; 
+  }
+}
+.icshare {
+  &:before {
+    content: $icshare; 
+  }
+}
+.icshop {
+  &:before {
+    content: $icshop; 
+  }
+}
+.icsort {
+  &:before {
+    content: $icsort; 
+  }
+}
+.icticket {
+  &:before {
+    content: $icticket; 
+  }
+}
+.icup {
+  &:before {
+    content: $icup; 
+  }
+}
+.icuser {
+  &:before {
+    content: $icuser; 
+  }
+}
+.icwallet {
+  &:before {
+    content: $icwallet; 
+  }
+}
+
