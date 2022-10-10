@@ -13229,6 +13229,25 @@ textarea.form-control-lg {
     );
   width: 100%;
   object-fit: cover;
+  pointer-events: none;
+}
+.banner-section .img-outer .play-icon {
+  position: absolute;
+  display: block;
+  height: calc(
+        80px + (100 - 80) * ((100vw - 1400px) / (1920 - 1400))
+    );
+  width: calc(
+        80px + (100 - 80) * ((100vw - 1400px) / (1920 - 1400))
+    );
+  top: calc(50% - 75px);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.banner-section .img-outer .play-icon img {
+  height: 100%;
+  width: 100%;
 }
 .banner-section .banner-content {
   position: absolute;
@@ -13373,6 +13392,12 @@ textarea.form-control-lg {
   }
   .banner-section .banner-content .cta-outer .btn {
     min-width: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .banner-section .swiper-button-prev,
+.banner-section .swiper-button-next {
+    display: none;
   }
 }
 @media (max-width: 992px) {
