@@ -59,18 +59,26 @@ $(document).ready(function () {
     var video = $("video");
     var videoStatus = video.get(0);
     
-  $(".play-icon").on('click', function () {
+  $("video").on('click', function () {
 
     if (videoStatus.paused) {
       video.trigger("play");
       swiper.autoplay.stop();
       $(".swiper-progress-bar").removeClass("animate");
+      $(".play-icon").addClass('d-none')
+      this
     } else {
       video.trigger("pause");
       swiper.autoplay.start();
       $(".swiper-progress-bar").addClass("animate");
+      $(".play-icon").removeClass('d-none')
     }
   });
+
+  // $(".play-icon").on('click', function() {
+  //   $("video").trigger("play");
+  //   this.addClass('d-none')
+  // })
 
 
 })

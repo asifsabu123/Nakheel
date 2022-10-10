@@ -1,6 +1,6 @@
 // banner style starts here
 .banner-section {
-    max-height: resize(600, 800, 1400, 1920);
+    max-height: 800px;
     position  : relative;
 
     .img-outer {
@@ -20,21 +20,25 @@
 
         .banner-image,
         .banner-video {
-            max-height    : resize(600, 800, 1400, 1920);
-            width         : 100%;
-            object-fit    : cover;
-            pointer-events: none;
+            max-height: 800px;
+            width     : 100%;
+            object-fit: cover;
+        }
+
+        .banner-video {
+            cursor: pointer;
         }
 
         .play-icon {
-            position: absolute;
-            display : block;
-            height  : resize(80, 100, 1400, 1920);
-            width   : resize(80, 100, 1400, 1920);
-            top     : calc(50% - 75px);
-            left    : 0;
-            right   : 0;
-            margin  : auto;
+            position      : absolute;
+            display       : block;
+            height        : resize(80, 100, 1400, 1920);
+            width         : resize(80, 100, 1400, 1920);
+            left          : 0;
+            top           : calc(50% - 75px);
+            right         : 0;
+            margin        : auto;
+            pointer-events: none;
 
             img {
                 height: 100%;
@@ -183,20 +187,39 @@
     }
 
     @media(max-width:1400px) {
-        max-height: resize(500, 600, 1200, 1400);
+        max-height: resize(640, 800, 1200, 1400);
 
-        .banner-image,
-        .banner-video {
-            max-height: resize(500, 600, 1200, 1400);
+        .img-outer {
+
+            .banner-image,
+            .banner-video {
+                max-height: resize(640, 800, 1200, 1400);
+                height    : resize(640, 800, 1200, 1400);
+            }
+
+            .play-icon {
+                height: 80px;
+                width : 80px;
+            }
         }
+
     }
 
     @media(max-width:1200px) {
-        max-height: resize(400, 500, 992, 1200);
+        max-height: 640px;
 
-        .banner-image,
-        .banner-video {
-            max-height: resize(400, 500, 992, 1200);
+        .img-outer {
+
+            .banner-image,
+            .banner-video {
+                max-height: 640px;
+                height    : 640px;
+            }
+            .play-icon {
+                height: 72px;
+                width : 72px;
+            }
+
         }
 
         .banner-content {
@@ -214,14 +237,28 @@
         .swiper-button-next {
             display: none;
         }
+
+
+        .swiper-pagination {
+            bottom       : 0 !important;
+            padding      : 0;
+            width        : 100% !important;
+            right        : auto !important;
+            margin       : auto !important;
+            margin-bottom: 0 !important; // -55px top
+        }
     }
 
     @media(max-width:992px) {
-        max-height: 300px;
+        // max-height: 300px;
 
-        .banner-image,
-        .banner-video {
-            max-height: 300px;
+        .img-outer {
+
+            // .banner-image,
+            // .banner-video {
+            //     max-height: 300px;
+            // }
+
         }
     }
 }
