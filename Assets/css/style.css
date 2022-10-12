@@ -13667,6 +13667,108 @@ textarea.form-control-lg {
   width: 100%;
   transition-duration: 5s;
 }
+.banner-section.vh-100 {
+  max-height: 100vh;
+  height: 100vh;
+}
+.banner-section.vh-100 .img-outer .banner-image,
+.banner-section.vh-100 .img-outer .banner-video {
+  max-height: 100vh;
+  height: 100vh;
+}
+.banner-section.vh-100 .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-100 .banner-content h1, .banner-section.vh-100 .banner-content .h1 {
+  text-align: center;
+}
+.banner-section.vh-100 .banner-content p {
+  text-align: center;
+}
+.banner-section.vh-800 {
+  max-height: 800px;
+  height: 800px;
+}
+.banner-section.vh-800 .img-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-800 .img-outer .banner-image,
+.banner-section.vh-800 .img-outer .banner-video {
+  max-height: 800px;
+  height: 800px;
+}
+.banner-section.vh-800 .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-800 .banner-content h1, .banner-section.vh-800 .banner-content .h1 {
+  text-align: center;
+}
+.banner-section.vh-800 .banner-content p {
+  text-align: center;
+}
+.banner-section.vh-600 {
+  max-height: 600px;
+  height: 600px;
+}
+.banner-section.vh-600 .img-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-600 .img-outer .banner-image,
+.banner-section.vh-600 .img-outer .banner-video {
+  max-height: 600px;
+  height: 600px;
+}
+.banner-section.vh-600 .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-600 .banner-content h1, .banner-section.vh-600 .banner-content .h1 {
+  text-align: center;
+}
+.banner-section.vh-600 .banner-content p {
+  text-align: center;
+}
+.banner-section.vh-480 {
+  max-height: 480px;
+  height: 480px;
+}
+.banner-section.vh-480 .img-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-480 .img-outer .banner-image,
+.banner-section.vh-480 .img-outer .banner-video {
+  max-height: 480px;
+  height: 480px;
+}
+.banner-section.vh-480 .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-section.vh-480 .banner-content h1, .banner-section.vh-480 .banner-content .h1 {
+  text-align: center;
+}
+.banner-section.vh-480 .banner-content p {
+  text-align: center;
+}
 @media (max-width: 1400px) {
   .banner-section {
     max-height: calc(
