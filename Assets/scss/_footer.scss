@@ -1,0 +1,26 @@
+.footer {
+    .top-section {
+        display: flex;
+
+        .brand-logo {
+            text-decoration: none;
+
+            em {
+                font-size: 200px;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            li {
+                list-style: none;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: $bold-text;
+            }
+        }
+    }
+}

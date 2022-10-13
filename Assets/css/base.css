@@ -13820,3 +13820,24 @@ textarea.form-control-lg {
     margin-bottom: 0 !important;
   }
 }
+.footer .top-section {
+  display: flex;
+}
+.footer .top-section .brand-logo {
+  text-decoration: none;
+}
+.footer .top-section .brand-logo em {
+  font-size: 200px;
+}
+.footer .top-section ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .top-section ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "nakheelbold_text";
+}
