@@ -3,17 +3,18 @@ $(window).scroll(function() {
 
     if (scroll >= 500) {
         $(".scroll-top-btn").addClass("show");
+        $('.navbar').addClass('sticky-primary');
     } else {
         $(".scroll-top-btn").removeClass("show");
+        $('.navbar').removeClass('sticky-primary');
     }
 });
 
 $(document).ready(function() {
     $(".scroll-top-btn").on('click', function() {
         $(window).scrollTop(0);
-    })
+    })   
 
-    
     $(document).ready(function () {
         var swiper = new Swiper(".swiper-container", {
           autoplay: {
