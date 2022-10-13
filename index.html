@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakheel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
@@ -101,8 +101,6 @@
         <!-- Header Section Ends -->
         <!-- banner section starts here -->
         <section class="banner-section">
-
-
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
@@ -112,14 +110,13 @@
                         <div class="img-outer">
                             <img class="img-fluid banner-image" src="Assets/images/Home_Banner.jpg" alt="">
                         </div>
-
                         <div class="banner-content">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-6 justify-content-center">
+                                    <div class="col-xl-6 justify-content-center">
                                         <h2 class="text-sand bold-headline">Lorem Ipsum Dolor Sit Amet Consectetur
                                             Adipiscing Elit Ut Porttitor Tempus…</h2>
-                                        <div class="cta-outer d-flex align-items-center">
+                                        <div class="cta-outer d-flex justify-content-center justify-content-xl-start align-items-center">
                                             <a class="btn btn-light" href="javascript:;">Learn More</a>
                                             <a class="btn btn-light" href="javascript:;">Explore</a>
                                         </div>
@@ -135,10 +132,10 @@
                         <div class="banner-content">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-6 justify-content-center">
+                                    <div class="col-xl-6 justify-content-center">
                                         <h2 class="text-sand bold-headline">Lorem Ipsum Dolor Sit Amet Consectetur
                                             Adipiscing Elit Ut Porttitor Tempus…</h2>
-                                        <div class="cta-outer d-flex align-items-center">
+                                        <div class="cta-outer d-flex justify-content-center justify-content-xl-start align-items-center">
                                             <a class="btn btn-light" href="javascript:;">Learn More</a>
                                             <a class="btn btn-light" href="javascript:;">Explore</a>
                                         </div>
@@ -149,15 +146,16 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="img-outer">
-                            <video class="banner-video" autoplay loop src="Assets/videos/Web-banner-13sec-with-gradient--1980x1020mp4.mp4"></video>
+                            <video class="banner-video" loop src="Assets/videos/Web-banner-13sec-with-gradient--1980x1020mp4.mp4"></video>
+                            <a class="play-icon" href="javascript:;"><img src="Assets/images/VideoPlay.svg" alt=""></a>
                         </div>
                         <div class="banner-content">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-6 justify-content-center">
+                                    <div class="col-xl-6 justify-content-center">
                                         <h2 class="text-sand bold-headline">Lorem Ipsum Dolor Sit Amet Consectetur
                                             Adipiscing Elit Ut Porttitor Tempus…</h2>
-                                        <div class="cta-outer d-flex align-items-center">
+                                        <div class="cta-outer d-flex justify-content-center justify-content-xl-start align-items-center">
                                             <a class="btn btn-light" href="javascript:;">Learn More</a>
                                             <a class="btn btn-light" href="javascript:;">Explore</a>
                                         </div>
@@ -188,111 +186,8 @@
 
     <script src="Assets/scripts/base.bundle.min.js"></script>
     <script src="Assets/scripts/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Assets/scripts/swiper-bundle.min.js"></script>
     <script src="Assets/scripts/script.js"></script>
-    <script type="module">
-        // import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-        //         const swiper = new Swiper('.swiper', {
-        //   // Optional parameters
-        //   direction: 'horizontal',
-        //   loop: true,
-
-        //   // If we need pagination
-        //   pagination: {
-        //     el: '.swiper-pagination',
-        //   },
-
-        //   // Navigation arrows
-        //   navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        //   },
-
-        //   // And if we need scrollbar
-        //   scrollbar: {
-        //     el: '.swiper-scrollbar',
-        //   },
-        // });
-
-
-
-        // jQuery(document).ready(function ($) {
-
-        //     let autoPlayDelay = 1500;
-
-        //     let options = {
-        //         init: true,
-        //         // Optional parameters
-        //         loop: false,
-
-        //         autoplay: {
-        //             delay: autoPlayDelay
-        //         },
-
-        //         // If we need pagination
-        //         /*pagination: {
-        //             el: '.swiper-pagination',
-        //             type: 'progressbar'
-        //         },*/
-
-        //         // Navigation arrows
-        //         navigation: {
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //         },
-        //     };
-
-        //     let mySwiper = new Swiper('.swiper-container', options);
-
-        //     let slidersCount = mySwiper.params.loop ? mySwiper.slides.length - 2 : mySwiper.slides.length;
-        //     let widthParts = 100 / slidersCount;
-
-        //     $('.swiper-counter .total').html(slidersCount);
-        //     for (let i = 0; i < slidersCount; i++) {
-        //         $('.swiper-progress-bar .progress-sections').append('<span></span>');
-        //     }
-
-        //     function initProgressBar() {
-        //         let calcProgress = (slidersCount - 1) * (autoPlayDelay + mySwiper.params.speed);
-        //         calcProgress += autoPlayDelay;
-        //         $('.swiper-progress-bar .progress').animate({
-        //             width: '100%'
-        //         }, calcProgress, 'linear');
-        //     }
-
-        //     initProgressBar();
-
-        //     mySwiper.on('slideChange', function () {
-        //         let progress = $('.swiper-progress-bar .progress');
-
-        //         $('.swiper-counter .current').html(this.activeIndex + 1);
-
-        //         if (
-        //             (
-        //                 this.progress == -0 || (this.progress == 1 && this.params.loop)
-        //             ) && !progress.parent().is('.stopped')
-        //         ) {
-        //             progress.css('width', '0');
-        //             if (this.activeIndex == 0) {
-        //                 initProgressBar();
-        //             }
-        //         }
-
-        //         if (progress.parent().is('.stopped')) {
-        //             progress.animate({
-        //                 'width': Math.round(widthParts * (this.activeIndex + 1)) + '%'
-        //             }, this.params.speed, 'linear');
-        //         }
-        //     });
-
-        //     mySwiper.on('touchMove', function () {
-        //         $('.swiper-progress-bar .progress').stop().parent().addClass('stopped');
-        //     });
-
-
-        // });
-    </script>
 </body>
 
 </html>
