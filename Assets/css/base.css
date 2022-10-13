@@ -128,7 +128,7 @@
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
+  --bs-border-color: rgba(0, 38, 58, 0.1019607843);
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
@@ -13796,11 +13796,6 @@ body {
 }
 
 .banner-section {
-  max-height: calc(
-        600px + (800 - 600) * ((100vw - 1400px) / (1920 - 1400))
-    );
-}
-.banner-section {
   max-height: 800px;
   position: relative;
 }
@@ -13962,31 +13957,6 @@ body {
   width: 100%;
   transition-duration: 5s;
 }
-@media (max-width: 1400px) {
-  .banner-section {
-    max-height: calc(
-        500px + (600 - 500) * ((100vw - 1200px) / (1400 - 1200))
-    );
-  }
-  .banner-section .banner-image,
-.banner-section .banner-video {
-    max-height: calc(
-        500px + (600 - 500) * ((100vw - 1200px) / (1400 - 1200))
-    );
-  }
-}
-@media (max-width: 1200px) {
-  .banner-section {
-    max-height: calc(
-        400px + (500 - 400) * ((100vw - 992px) / (1200 - 992))
-    );
-  }
-  .banner-section .banner-image,
-.banner-section .banner-video {
-    max-height: calc(
-        400px + (500 - 400) * ((100vw - 992px) / (1200 - 992))
-    );
-}
 .banner-section.vh-100 {
   max-height: 100vh;
   height: 100vh;
@@ -14126,13 +14096,6 @@ body {
     min-width: auto;
   }
 }
-@media (max-width: 992px) {
-  .banner-section {
-    max-height: 300px;
-  }
-  .banner-section .banner-image,
-.banner-section .banner-video {
-    max-height: 300px;}
 @media (max-width: 1024px) {
   .banner-section .swiper-button-prev,
 .banner-section .swiper-button-next {
@@ -14145,27 +14108,49 @@ body {
     right: auto !important;
     margin: auto !important;
     margin-bottom: 0 !important;
-    color: red;
   }
 }
 .footer .top-section {
   display: flex;
 }
+.footer .top-section .top-collapse .accordion-item {
+  border: none;
+}
+.footer .top-section .top-collapse .accordion-item .accordion-header {
+  padding: 50px 0 28px 0;
+  border-bottom: 1px solid rgba(0, 38, 58, 0.1019607843);
+}
 .footer .top-section .brand-logo {
   text-decoration: none;
 }
-.footer .top-section .brand-logo em {
-  font-size: 200px;
+.footer .top-section .brand-logo img {
+  height: 36px;
 }
 .footer .top-section ul {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
+  margin: 0 20px;
+  padding: 0;
 }
 .footer .top-section ul li {
   list-style: none;
   font-size: 18px;
   font-weight: bold;
   font-family: "nakheelbold_text";
+  min-width: 200px;
+}
+.footer .top-section ul li ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.footer .top-section ul li ul li {
+  font-size: 14px;
+  color: #59595C;
+}
+.footer .top-section .collapse-btn {
+  white-space: nowrap;
+  font-size: 18px;
+  color: #B5ABA3;
 }

@@ -2,25 +2,58 @@
     .top-section {
         display: flex;
 
+        .top-collapse {
+            .accordion-item {
+            border: none;
+            .accordion-header {
+                padding: 50px 0 28px 0;
+                border-bottom: 1px solid $border-color;
+            }
+
+            }
+        }
+
         .brand-logo {
             text-decoration: none;
 
-            em {
-                font-size: 200px;
+            img {
+                height: 36px;
             }
+
+            // em {
+            //     @include fontSize(200, 200, 180, 180, 140, 100, 100)
+            // }
         }
 
         ul {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            align-items: flex-start;
+            // justify-content: space-between;
             width: 100%;
+            margin: 0 20px;
+            padding: 0;
             li {
                 list-style: none;
                 font-size: 18px;
                 font-weight: bold;
                 font-family: $bold-text;
+                min-width: 200px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    li {
+                        font-size: 14px;
+                        color: $COOLGRAY;
+                    }
+                }
             }
+        }
+
+        .collapse-btn {
+            white-space: nowrap;
+            font-size: 18px;
+            color: $WARMGRAY;
         }
     }
 }

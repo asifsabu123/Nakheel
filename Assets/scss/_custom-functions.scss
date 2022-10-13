@@ -14,8 +14,32 @@
     -webkit-box-orient: vertical;
 }
 
-@mixin fontsize($xxxl, $xxl, $xl, $lg, $md, $sm, $xs) {
-    font-size: $xxxl;
+// fontsize responsive mixin
+@mixin fontSize($xxxl, $xxl, $xl, $lg, $md, $sm, $xs) {
+    font-size: #{$xxxl}px; 
+    @media(max-width:1920px) {
+        font-size: calc( #{$xxl}px + (#{$xxxl} - #{$xxl}) * ((100vw - 1400px) / (1920 - 1400)));
+    }
+    @media (max-width:1400px) {
+        font-size: calc( #{$xl}px + (#{$xxl} - #{$xl}) * ((100vw - 1200px) / (1400 - 1200)));
+    }
+    @media (max-width:1200px) {
+        font-size: calc( #{$lg}px + (#{$xl} - #{$lg}) * ((100vw - 992px) / (1200 - 992)));
+    }
+    @media (max-width:992px) {
+        font-size: calc( #{$md}px + (#{$lg} - #{$md}) * ((100vw - 768px) / (992 - 768)));
+    }
+    @media(max-width:768px) {
+        font-size: calc( #{$sm}px + (#{$md} - #{$sm}) * ((100vw - 576px) / (768 - 576)));
+    }
+    @media(max-width:576px) {
+        font-size: calc( #{$xs}px + (#{$sm} - #{$xs}) * ((100vw - 360px) / (576 - 360)));
+    }
+}
+
+// fontweight responsive mixin
+@mixin fontWeight($xxxl, $xxl, $xl, $lg, $md, $sm, $xs) {
+    font-size: #{$xxxl}px; 
     @media(max-width:1920px) {
         font-size: calc( #{$xxl}px + (#{$xxxl} - #{$xxl}) * ((100vw - 1400px) / (1920 - 1400)));
     }
