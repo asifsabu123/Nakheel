@@ -21,12 +21,15 @@
         .banner-image,
         .banner-video {
             max-height: 800px;
+            height: 800px;
             width     : 100%;
             object-fit: cover;
         }
 
         .banner-video {
             cursor: pointer;
+            position: static;
+            border: none;
         }
 
         .play-icon {
