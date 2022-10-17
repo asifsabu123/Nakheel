@@ -15,7 +15,7 @@
 
             .accordion-body {
                 border-bottom: 1px solid $border-color;
-                padding      : 0 0 52px 0;
+                padding      : 20px 0 52px 0;
             }
         }
 
@@ -59,11 +59,47 @@
             }
         }
 
+        .inner-accordion {
+            .accordion-body {
+                border: none;
+
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            padding-bottom: 10px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color          : $COOLGRAY;
+                            font-size      : 14px;
+                            line-height    : 22px;
+
+                        }
+                    }
+                }
+            }
+
+            @media(min-width:1024px) {
+                .collapse {
+                    display   : block;
+                    height    : auto !important;
+                    visibility: visible;
+                }
+
+                .inner-accordion-title {
+                    display: none;
+                }
+            }
+        }
+
         .collapse-btn {
             white-space: nowrap;
             font-size  : 18px;
             color      : $WARMGRAY;
         }
+
+
     }
 
     .mid-section {
@@ -85,15 +121,15 @@
                 }
 
                 a {
-                    display: flex;
-                    align-items: center;
+                    display        : flex;
+                    align-items    : center;
                     justify-content: center;
-                    height       : 36px;
-                    width        : 36px;
-                    border-radius: 50%;
-                    background   : $primary;
-                    color: red;
-                    font-size: 20px;
+                    height         : 36px;
+                    width          : 36px;
+                    border-radius  : 50%;
+                    background     : $primary;
+                    color          : red;
+                    font-size      : 20px;
                     text-decoration: none;
                 }
             }

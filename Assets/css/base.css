@@ -13800,6 +13800,7 @@ body {
 }
 .banner-section .img-outer {
   position: relative;
+  max-height: 800px;
 }
 .banner-section .img-outer::before {
   content: "";
@@ -13821,8 +13822,6 @@ body {
 }
 .banner-section .img-outer .banner-video {
   cursor: pointer;
-  position: static;
-  border: none;
 }
 .banner-section .img-outer .play-icon {
   position: absolute;
@@ -14124,7 +14123,7 @@ body {
 }
 .footer .top-section .top-collapse .accordion-body {
   border-bottom: 1px solid rgba(0, 38, 58, 0.1019607843);
-  padding: 0 0 52px 0;
+  padding: 20px 0 52px 0;
 }
 .footer .top-section .brand-logo {
   text-decoration: none;
@@ -14155,6 +14154,28 @@ body {
 .footer .top-section ul li ul li {
   font-size: 14px;
   color: #59595C;
+}
+.footer .top-section .inner-accordion .accordion-body {
+  border: none;
+}
+.footer .top-section .inner-accordion .accordion-body ul li:not(:last-child) {
+  padding-bottom: 10px;
+}
+.footer .top-section .inner-accordion .accordion-body ul li a {
+  text-decoration: none;
+  color: #59595C;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 1024px) {
+  .footer .top-section .inner-accordion .collapse {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+  .footer .top-section .inner-accordion .inner-accordion-title {
+    display: none;
+  }
 }
 .footer .top-section .collapse-btn {
   white-space: nowrap;

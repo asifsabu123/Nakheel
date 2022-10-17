@@ -5,7 +5,7 @@
 
     .img-outer {
         position: relative;
-
+        max-height: 800px;
         &::before {
             content   : "";
             position  : absolute;
@@ -28,8 +28,6 @@
 
         .banner-video {
             cursor: pointer;
-            position: static;
-            border: none;
         }
 
         .play-icon {
