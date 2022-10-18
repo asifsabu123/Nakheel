@@ -14194,7 +14194,7 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .footer .top-section .inner-accordion .collapse {
     display: block;
     height: auto !important;
